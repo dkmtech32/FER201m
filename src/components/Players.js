@@ -1,7 +1,7 @@
 import React from 'react'
 import { LOPlayers } from '../shared/ListOfPlayers'
 
-export default function Players  {
+export default function Players() {
     return (
         <div className='container'>
             {LOPlayers.map(
