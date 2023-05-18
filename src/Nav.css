@@ -1,5 +1,5 @@
 nav {
-    background-color: #333;
+    background-color: #1b1b1b;
   }
   
   nav ul {
@@ -26,6 +26,16 @@ nav {
   }
   
   .active {
-    background-color: #a20000;
+    background-color: #ffa31a;
+    color:#111;
+  }
+ 
+  
+  .logo {
+    width: 100px;
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
   }
   

@@ -2,7 +2,7 @@
 import './App.css';
 import Navigation from './components/Navigation';
 import './Nav.css';
-import './Player.css';
+import './Films.css';
 import Footer from './components/Footer';
 import './components/Footer.css';
 import '@fortawesome/react-fontawesome';
