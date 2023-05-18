@@ -8,14 +8,20 @@ export default function Films({ films }) {
       {films.map((f) => (
         <div className='column' key={f.id}>
           <div className='card'>
-            <img src={f.img} alt={f.title} />
+
+            <div className='poster'>
+              <img src={f.img} alt={f.title} />
+              <span class="quality_slider">FHD</span>
+            </div>
+           
             <div className='info'>
               <h3>{f.name}</h3>
               <p className='title'>{f.title}</p>
               <p className='nation'>{f.nation}</p>
               <p className='year'>{f.year}</p>
-              <p><button>Detail</button></p>
+              <p><button>Watch</button></p>
             </div>
+
           </div>
         </div>
 
