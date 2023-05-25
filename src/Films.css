@@ -89,7 +89,31 @@ button {
   cursor: pointer;
   border-radius: 5px;
 }
+button a{
+  text-decoration: inherit;
+  color:inherit;
+}
 
 button:hover {
   opacity: 0.8;
+  color: white;
+}
+@media (max-width: 768px) {
+  .container {
+    justify-content: space-around;
+  }
+  
+  .column {
+    width: 45%;
+  }
+  
+  .popup {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .column {
+    width: 100%;
+  }
 }
