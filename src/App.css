@@ -52,21 +52,34 @@
   opacity: 1;
 }
 .popup {
-  margin: 70px auto;
+  margin: auto auto;
   padding: 5px;
   background: #fff;
   border-radius: 5px;
+  height: 30rem;
+
   width: 30%;
   position: relative;
   transition: all 1s ease-in-out;
 }
-.popup img{ width: 100%;}
+.popup img{  width: 100%;
+  height: auto;}
 .popup h2 {
   margin-top: 0;
   color: #333;
   font-family: Tahoma, Arial, sans-serif;
 }
 .popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.close {
   position: absolute;
   top: 20px;
   right: 30px;

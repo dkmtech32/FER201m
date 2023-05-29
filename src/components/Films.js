@@ -33,16 +33,27 @@ export default function Films({ films }) {
 
       ))}
       <div id='popup1' className='overlay'>
-        <div className='popup'>
-          <img src={film.img} alt={film.name} />
-          <h3>{film.title}</h3>
-          <a className='close' href='#'>&times;</a>
-          <div className='content'>
-            {film.description}
-          </div>
-        </div>
-      </div>
+  <div className='popup'>
 
+    <div class="poster">
+      <img src={film.img} alt={film.name} />
+      <span class="quality_slider">FHD</span>
     </div>
+
+    <div class="details">
+      <h3>{film.title}</h3>
+      <a className='close' href='#'>&times;</a>
+      <div className='content'>
+        <p><strong>Director:</strong> {film.director}</p>
+        <p><strong>Cast:</strong> {film.cast+' '}</p>
+        <p><strong>Genre:</strong>{film.genre+' '}</p>
+        <p><strong>Duration:</strong>{film.duration}</p>
+        <p>{film.description}</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
   )
 }

@@ -71,26 +71,42 @@ export const LOFilms = [
     genre: ['Horror', 'Drama'],
     duration: '2h 28min'
   },
+ 
   {
     id: 7,
     title: 'Interstellar',
     nation: 'United States',
     year: '2014',
     img: 'assets/images/instla.jpg',
-    description: 'A science fiction epic directed by Christopher Nolan, in which a'
+    description: 'A science fiction epic directed by Christopher Nolan, in which a team of astronauts travel through a wormhole in search of a new home for humanity. Stars Matthew McConaughey, Anne Hathaway, and Jessica Chastain.',
+    director: 'Christopher Nolan',
+    cast: ['Matthew McConaughey', 'Anne Hathaway', 'Jessica Chastain', 'Michael Caine'],
+    genre: ['Sci-Fi', 'Adventure', 'Drama'],
+    duration: '2h 49min'
   },
   {
     id: 8,
     title: 'M3GAN',
     nation: 'United States',
     year: '2022',
-    img: 'assets/images/m3gan.jpg'
+    img: 'assets/images/m3gan.jpg',
+    description: 'An action thriller about a brilliant AI programmer who creates a life-like robot named M3GAN, only to have it become obsessed with her and begin terrorizing her loved ones. Stars Kate Mara and Nat Wolff.',
+    director: 'Gerard Johnstone',
+    cast: ['Kate Mara', 'Nat Wolff', 'Jai Courtney', 'Michelle Rodriguez'],
+    genre: ['Action', 'Thriller', 'Sci-Fi'],
+    duration: '2h 28min'
   },
   {
     id: 9,
     title: 'Suzume',
     nation: 'Japan',
     year: '2022',
-    img: 'assets/images/suzume.jpg'
+    img: 'assets/images/suzume.jpg',
+    description: 'A drama following the story of a young girl named Suzume, who moves from Tokyo to a small town in the countryside and learns to adjust to her new life. Based on the manga series "Daytime Shooting Star" by Mika Yamamori.',
+    director: 'Takehiko Shinjo',
+    cast: ['Nana Komatsu', 'Shotaro Mamiya', 'Junya Ikeda'],
+    genre: ['Drama', 'Romance'],
+    duration: '2h 29min'
   }
+  
 ];
