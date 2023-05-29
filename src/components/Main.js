@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { LOPlayers } from '../shared/ListOfPlayers'
+import { data } from '../shared/ListOfPlayers'
 import PlayersPresentation from './PlayersPresentation'
 import Films from './Films';
 import {LOFilms} from '../shared/ListOfFilms'
@@ -7,7 +7,7 @@ export default class Main extends Component {
   constructor(){
     super();
     this.state={
-        players: LOPlayers,
+        players: data,
         films: LOFilms
     };
   }
