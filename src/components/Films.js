@@ -9,9 +9,9 @@ export default function Films({ films }) {
     <div className='container'>
       {films.map((film) => (
         <div className='column' key={film.id}>
-          <div className='card'>
+          <div className='card horizontal'>
 
-            <div className='poster'>
+            <div className='card-image'>
               <img src={film.img} alt={film.title} />
               <span class="quality_slider">FHD</span>
             </div>
