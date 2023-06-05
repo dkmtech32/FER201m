@@ -6,7 +6,7 @@ export default function Films({ films }) {
   console.log(films);
 
   return (
-    <div className='container'>
+    <div className='container-fluid'>
       {films.map((film) => (
         <div className='column' key={film.id}>
           <div className='card horizontal'>
@@ -21,9 +21,10 @@ export default function Films({ films }) {
               <p className='title'>{film.title}</p>
               <p className='nation'>{film.nation}</p>
               <p className='year'>{film.year}</p>
-              <p><button onClick={() => { setFilm(film) }}>
-                <a href='#popup1' id='openPopUp'>Detail</a>
-              </button>
+              <p>
+                <button onClick={() => { setFilm(film) }}>
+                  <a href='#popup1' id='openPopUp'>Detail</a>
+                </button>
               </p>
             </div>
 
@@ -33,27 +34,27 @@ export default function Films({ films }) {
 
       ))}
       <div id='popup1' className='overlay'>
-  <div className='popup'>
+        <div className='popup'>
 
-    <div class="poster">
-      <img src={film.img} alt={film.name} />
-      <span class="quality_slider">FHD</span>
-    </div>
+          <div class="poster">
+            <img src={film.img} alt={film.name} />
+            <span class="quality_slider">FHD</span>
+          </div>
 
-    <div class="details">
-      <h3>{film.title}</h3>
-      <a className='close' href='#'>&times;</a>
-      <div className='content'>
-        <p><strong>Director:</strong> {film.director}</p>
-        <p><strong>Cast:</strong> {film.cast+' '}</p>
-        <p><strong>Genre:</strong>{film.genre+' '}</p>
-        <p><strong>Duration:</strong>{film.duration}</p>
-        <p>{film.description}</p>
+          <div class="details">
+            <h3>{film.title}</h3>
+            <a className='close' href='#'>&times;</a>
+            <div className='content'>
+              <p><strong>Director:</strong> {film.director}</p>
+              <p><strong>Cast:</strong> {film.cast + ' '}</p>
+              <p><strong>Genre:</strong>{film.genre + ' '}</p>
+              <p><strong>Duration:</strong>{film.duration}</p>
+              <p>{film.description}</p>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
-
-  </div>
-</div>
-</div>
   )
 }
