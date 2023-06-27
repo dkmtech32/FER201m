@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import "materialize-css/dist/css/materialize.min.css";
 import M from "materialize-css/dist/js/materialize.min.js";
-import Menu from '@mui/material';
+import Menu, { Switch } from '@mui/material';
 import { useEffect } from 'react';
 import { ThemeContext } from './ThemeContext';
 import { Link, NavLink } from 'react-router-dom';
@@ -30,6 +30,7 @@ export default function Navigation() {
                 <span className='lever'></span>
               </label>
             </div>
+            {/* <Switch right color="warning" checked={isEnabled} onChange={toggleState}/> */}
             {/* <a href="#" data-target="mobile-menu" className="sidenav-trigger"><Menu /></a> */}
             <ul className="right hide-on-med-and-down">
               <li><NavLink to={`/`}><i class="fa-solid fa-house-chimney left"></i>Home</NavLink></li>
