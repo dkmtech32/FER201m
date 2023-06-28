@@ -157,7 +157,10 @@ nav img {
   margin-bottom: 20px;
   padding: 10px;
 }
-
+.btn{
+  background-color: #ffa31a!important;
+  color: var(--foreground);
+}
 .card  {
   background-color: var(--cardbackground)!important;
   flex-direction: row;
@@ -704,6 +707,11 @@ b{
 }
 .switch label input[type=checkbox]:checked+.lever:after{
   background-color: #ffa31a!important;
+}
+
+
+.img-thumbnail{
+  width: 50rem;
 }
 @media (max-width: 768px) {
   .popup {

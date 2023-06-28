@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+
 export default function Films({ films }) {
   const [film, setFilm] = useState([])
   console.log(films);
