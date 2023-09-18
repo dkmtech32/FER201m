@@ -3,7 +3,7 @@ import { useFormik } from 'formik';
 import { TextField, FormControlLabel, Switch, Button, Typography, FormGroup } from '@mui/material';
 import * as Yup from 'yup';
 export default function Contact() {
-  
+
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -13,11 +13,11 @@ export default function Contact() {
       agree: false
 
     },
-  
-      onSubmit: (values)=>{alert(JSON.stringify(formik.values))},
-      //Convert to JSON string and show in alert box.
-      
-  
+
+    onSubmit: (values) => { alert(JSON.stringify(formik.values)) },
+    //Convert to JSON string and show in alert box.
+
+
     validationSchema: Yup.object({
       name: Yup.string().required("Required.").min(2, "Must be 2 characters or more"),
       email: Yup.string().required("Required.").email("Invalid email"),
@@ -36,7 +36,7 @@ export default function Contact() {
         <h4>Contact us today, and get reply with in 24 hours!</h4>
 
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-12">
             <div class="md-form">
               <TextField
                 fullWidth
@@ -52,7 +52,7 @@ export default function Contact() {
         </div>
 
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-12">
             <div class="md-form">
               <TextField
                 fullWidth
@@ -103,17 +103,17 @@ export default function Contact() {
 
         <FormControlLabel control={
           <div class="switch" >
-          <label>
-            <input type="checkbox" name='agree' value={formik.values.agree} onClick={formik.handleChange} />
-            <span class="lever"></span>
-            Agree to terms and conditions.
-          </label>
-        </div>
-        } 
+            <label>
+              <input type="checkbox" name='agree' value={formik.values.agree} onClick={formik.handleChange} />
+              <span class="lever"></span>
+              Agree to terms and conditions.
+            </label>
+          </div>
+        }
           value={formik.values.agree} onClick={formik.handleChange} />
         {formik.errors.agree && (<Typography variant="caption" color="red">{formik.errors.agree}</Typography>)}
-        
-        
+
+
         <Button
           type='submit'>
           Send
